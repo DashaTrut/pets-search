@@ -28,6 +28,7 @@ public class Pet {
     @Column(name = "chip")
     private boolean isChip;
     //клеймо
+
     @Column(name = "chip")
     private boolean isBrand;
 
