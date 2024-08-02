@@ -20,6 +20,7 @@ public class Pet {
 
     private String name;
 
+
     private String city;
 
     private double lat;
