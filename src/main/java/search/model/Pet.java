@@ -34,7 +34,7 @@ public class Pet {
     @Column(name = "loss_time")
     private LocalDateTime lossTime;
     
-
+    
     private String description;
     
 }
