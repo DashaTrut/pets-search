@@ -1,12 +1,12 @@
 package search.dto;
 
-import lombok.*;
-import search.model.Location;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.util.List;
 
 
 @Data
@@ -14,7 +14,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NewUser {
-
     @Email
     @NotBlank
     private String email;
@@ -22,8 +21,6 @@ public class NewUser {
     private String name;
     @NotBlank
     private String city;
-
-    //private List<Location> places;
 
     @Override
     public int hashCode() {

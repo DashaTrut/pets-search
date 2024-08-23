@@ -3,7 +3,8 @@ package search.model;
 import lombok.*;
 
 import javax.persistence.*;
-import javax.validation.constraints.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 
 
 @Getter
@@ -28,10 +29,6 @@ public class User {
     private String city;
 
     private boolean isAdmin;
-
-//    private double lat;
-//
-//    private double lon;
 
     @Override
     public boolean equals(Object o) {

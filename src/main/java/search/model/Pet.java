@@ -20,24 +20,20 @@ public class Pet {
 
     private String name;
 
-
     private String city;
+    @ManyToOne(fetch = FetchType.LAZY) //думаю, что на одну локацию может быть несколько потеряшек
+    @JoinColumn(name = "location_id")
+    private Location location;
 
-    private double lat;
-
-    private double lon;
     @Column(name = "chip")
     private boolean isChip;
     //клеймо
-
-    @Column(name = "chip")
+    @Column(name = "brand")
     private boolean isBrand;
 
     @Column(name = "loss_time")
     private LocalDateTime lossTime;
-    
-
 
     private String description;
-    
+
 }

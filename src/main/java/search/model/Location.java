@@ -2,8 +2,7 @@ package search.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -14,7 +13,12 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @Table(name = "locations", schema = "public")
 public class Location {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     private double lat;
+
     private double lon;
 
 }
