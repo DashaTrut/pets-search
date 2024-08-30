@@ -16,7 +16,6 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 @Table(name = "users", schema = "public")
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

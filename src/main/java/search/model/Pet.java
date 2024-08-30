@@ -20,6 +20,8 @@ public class Pet {
 
     private String name;
 
+    private User owner;
+
     private String city;
     @ManyToOne(fetch = FetchType.LAZY) //думаю, что на одну локацию может быть несколько потеряшек
     @JoinColumn(name = "location_id")
